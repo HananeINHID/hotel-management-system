@@ -134,6 +134,11 @@ body {
   color: var(--muted);
 }
 
+.api-status {
+  margin-top: 1rem !important;
+  font-weight: 600;
+}
+
 .page-card {
   background: var(--surface);
   border: 1px solid var(--border);
