@@ -45,3 +45,4 @@ Thumbs.db
 htmlcov/
 .pytest_cache/
 .mypy_cache/
+backend/config/settings_local.py
