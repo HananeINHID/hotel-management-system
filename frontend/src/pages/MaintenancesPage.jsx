@@ -6,6 +6,7 @@ import {
   DollarSign, Calendar, User, BedDouble, ChevronRight,
 } from 'lucide-react'
 import { maintenancesAPI, chambresAPI } from '../services/chambresMaintenances'
+import { employesApi } from '../api'
 import { Modal } from '../components/common/Modal'
 import { ConfirmDialog } from '../components/common/ConfirmDialog'
 import { LoadingSpinner } from '../components/common/LoadingSpinner'
@@ -196,14 +197,12 @@ function MaintenancesPage() {
   // ── Chargement ─────────────────────────────────────────────────────
   const loadRefs = useCallback(async () => {
     try {
-      const [cData, eData] = await Promise.all([
+      const [cData, eRes] = await Promise.all([
         chambresAPI.list({ page_size: 200 }),
-        fetch('http://127.0.0.1:8000/api/employes/?page_size=200')
-          .then((r) => r.json())
-          .catch(() => ({ results: [] })),
+        employesApi.getAll({ page_size: 200 }).catch(() => ({ data: { results: [] } })),
       ])
       setChambres(cData.results || [])
-      setEmployes(eData.results || [])
+      setEmployes(eRes.data?.results || eRes.data || [])
     } catch (e) {
       console.error('Erreur chargement refs:', e)
     }
