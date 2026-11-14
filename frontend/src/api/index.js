@@ -46,3 +46,10 @@ export const sejoursApi = {
 export const dashboardApi = {
   getStats: () => apiClient.get('/dashboard/stats/'),
 }
+
+// Module Membre 2 : Chambres & Maintenances
+export {
+  categoriesChambresAPI,
+  chambresAPI,
+  maintenancesAPI,
+} from '../services/chambresMaintenances'

@@ -1,6 +1,7 @@
 """
 URL configuration for Hotel Management System.
 Module Karima : Services, Consommations, Paiements, Employés + Swagger OpenAPI
+Module Membre 2 : Chambres, Catégories, Maintenances
 """
 from django.contrib import admin
 from django.urls import path, include
@@ -21,4 +22,8 @@ urlpatterns = [
     path('api/', include('apps.services.urls')),
     path('api/', include('apps.paiements.urls')),
     path('api/', include('apps.employes.urls')),
+
+    # Endpoints métier du module Chambres & Maintenances (Membre 2)
+    path('api/', include('apps.chambres.urls')),
+    path('api/', include('apps.maintenances.urls')),
 ]
