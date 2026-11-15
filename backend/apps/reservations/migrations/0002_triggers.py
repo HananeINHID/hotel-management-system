@@ -13,6 +13,8 @@ def desinstaller(apps, schema_editor):
 
 class Migration(migrations.Migration):
 
+    atomic = False
+
     dependencies = [
         ('reservations', '0001_initial'),
     ]
