@@ -26,4 +26,5 @@ urlpatterns = [
     # Endpoints métier du module Chambres & Maintenances (Membre 2)
     path('api/', include('apps.chambres.urls')),
     path('api/', include('apps.maintenances.urls')),
+     path('api/', include('apps.reservations.urls')),
 ]
