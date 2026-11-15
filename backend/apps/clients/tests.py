@@ -3,9 +3,9 @@ from django.test import TestCase
 from rest_framework import status
 from rest_framework.test import APITestCase
 
+# Create your tests here.
 from apps.avis.models import Avis
-from apps.stubs.models import Sejour
-
+from apps.clients.factories import creer_reservation_chambre, creer_sejour
 from .models import Client
 
 
@@ -37,9 +37,15 @@ class ClientAPITest(APITestCase):
         self.assertEqual(res.status_code, status.HTTP_201_CREATED)
         self.assertEqual(res.data['piece_identite'], 'CD987654')
 
+    def test_telephone_obligatoire(self):
+        res = self.client.post(self.url, {'nom': 'X', 'prenom': 'Y', 'piece_identite': 'ZZ2'}, format='json')
+        self.assertEqual(res.status_code, status.HTTP_400_BAD_REQUEST)
+
     def test_piece_identite_en_double_refusee(self):
         make_client()
-        res = self.client.post(self.url, {'nom': 'X', 'prenom': 'Y', 'piece_identite': 'ab123456'}, format='json')
+        res = self.client.post(self.url, {
+            'nom': 'X', 'prenom': 'Y', 'piece_identite': 'ab123456', 'telephone': '0600000000',
+        }, format='json')
         self.assertEqual(res.status_code, status.HTTP_400_BAD_REQUEST)
 
     def test_telephone_invalide(self):
@@ -68,20 +74,27 @@ class ClientAPITest(APITestCase):
 
     def test_suppression_refusee_avec_avis(self):
         c = make_client()
-        s = Sejour.objects.create(statut_sejour='TERMINE')
+        s = creer_sejour(statut_sejour='TERMINE', client=c)
         Avis.objects.create(client=c, sejour=s, note=5)
+        res = self.client.delete(f'{self.url}{c.pk}/')
+        self.assertEqual(res.status_code, status.HTTP_409_CONFLICT)
+
+    def test_suppression_refusee_avec_reservation(self):
+        c = make_client()
+        creer_reservation_chambre(client=c)
         res = self.client.delete(f'{self.url}{c.pk}/')
         self.assertEqual(res.status_code, status.HTTP_409_CONFLICT)
 
     def test_historique(self):
         c = make_client()
-        s = Sejour.objects.create(statut_sejour='TERMINE')
+        s = creer_sejour(statut_sejour='TERMINE', client=c)
         Avis.objects.create(client=c, sejour=s, note=4, commentaire='Très bien')
         res = self.client.get(f'{self.url}{c.pk}/historique/')
         self.assertEqual(res.status_code, status.HTTP_200_OK)
         self.assertEqual(res.data['nb_avis'], 1)
         self.assertEqual(res.data['note_moyenne'], 4.0)
-        self.assertEqual(res.data['reservations'], [])
+        self.assertEqual(len(res.data['reservations']), 1)
+        self.assertEqual(res.data['reservations'][0]['id_reservation'], s.reservation_id)
 
 
 class ClientPaginationTest(APITestCase):

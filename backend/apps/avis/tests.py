@@ -3,9 +3,9 @@ from django.test import TestCase
 from rest_framework import status
 from rest_framework.test import APITestCase
 
+# Create your tests here.
 from apps.clients.models import Client
-from apps.stubs.models import Sejour
-
+from apps.clients.factories import creer_sejour
 from .models import Avis
 
 
@@ -16,7 +16,7 @@ def make_client(pi='AB1'):
 class AvisModelTest(TestCase):
     def setUp(self):
         self.client_obj = make_client()
-        self.sejour = Sejour.objects.create(statut_sejour='TERMINE')
+        self.sejour = creer_sejour(statut_sejour='TERMINE', client=self.client_obj)
 
     def test_un_seul_avis_par_sejour(self):
         Avis.objects.create(client=self.client_obj, sejour=self.sejour, note=5)
@@ -35,8 +35,8 @@ class AvisAPITest(APITestCase):
 
     def setUp(self):
         self.c = make_client()
-        self.s_fini = Sejour.objects.create(statut_sejour='TERMINE')
-        self.s_cours = Sejour.objects.create(statut_sejour='EN_COURS')
+        self.s_fini = creer_sejour(statut_sejour='TERMINE', client=self.c)
+        self.s_cours = creer_sejour(statut_sejour='EN_COURS', client=self.c)
 
     def payload(self, **kw):
         d = {'client': self.c.pk, 'sejour': self.s_fini.pk, 'note': 5, 'commentaire': 'Super séjour'}
@@ -52,6 +52,12 @@ class AvisAPITest(APITestCase):
         res = self.client.post(self.url, self.payload(sejour=self.s_cours.pk), format='json')
         self.assertEqual(res.status_code, status.HTTP_400_BAD_REQUEST)
 
+    def test_refuse_si_client_pas_celui_de_la_reservation(self):
+        autre = make_client(pi='ZZ9')
+        res = self.client.post(self.url, self.payload(client=autre.pk), format='json')
+        self.assertEqual(res.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertIn('client', res.data['errors'])
+
     def test_refuse_note_hors_bornes(self):
         for n in (0, 6):
             res = self.client.post(self.url, self.payload(note=n), format='json')
@@ -63,7 +69,7 @@ class AvisAPITest(APITestCase):
         self.assertEqual(res.status_code, status.HTTP_400_BAD_REQUEST)
 
     def test_filtres_et_statistiques(self):
-        s2 = Sejour.objects.create(statut_sejour='TERMINE')
+        s2 = creer_sejour(statut_sejour='TERMINE', client=self.c)
         Avis.objects.create(client=self.c, sejour=self.s_fini, note=5)
         Avis.objects.create(client=self.c, sejour=s2, note=3)
         res = self.client.get(self.url, {'note': 5})
