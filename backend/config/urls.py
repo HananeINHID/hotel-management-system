@@ -25,8 +25,5 @@ urlpatterns = [
     path('api/', include('apps.employes.urls')),
     path('api/', include('apps.chambres.urls')),
     path('api/', include('apps.maintenances.urls')),
-
-    # Endpoints métier du module Clients & Avis (Safae)
-    path('api/', include('apps.clients.urls')),
-    path('api/', include('apps.avis.urls')),
+     path('api/', include('apps.reservations.urls')),
 ]
