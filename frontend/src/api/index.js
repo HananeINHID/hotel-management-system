@@ -79,3 +79,6 @@ export {
   chambresAPI,
   maintenancesAPI,
 } from '../services/chambresMaintenances'
+
+// Module Safae : Clients & Avis
+export { clientsApi, avisApi } from './clientsAvis'
