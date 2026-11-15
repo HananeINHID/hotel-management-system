@@ -17,13 +17,13 @@ urlpatterns = [
     path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
     path('api/docs/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
     path('api/redoc/', SpectacularRedocView.as_view(url_name='schema'), name='redoc'),
-
+     # Module Séjours
+    path("api/", include("apps.sejours.urls")),
     # Endpoints métier du module de Karima
     path('api/', include('apps.services.urls')),
     path('api/', include('apps.paiements.urls')),
     path('api/', include('apps.employes.urls')),
-
-    # Endpoints métier du module Chambres & Maintenances (Membre 2)
     path('api/', include('apps.chambres.urls')),
     path('api/', include('apps.maintenances.urls')),
+
 ]
