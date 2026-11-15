@@ -42,7 +42,18 @@ export const employesApi = {
 export const sejoursApi = {
   getResumeFinancier: (id) => apiClient.get(`/sejours/${id}/resume-financier/`),
 }
-
+export const reservationsApi = {
+  getAll: (params = {}) => apiClient.get('/reservations/', { params }),
+  get: (id) => apiClient.get(`/reservations/${id}/`),
+  create: (data) => apiClient.post('/reservations/', data),
+  update: (id, data) => apiClient.patch(`/reservations/${id}/`, data),
+  delete: (id) => apiClient.delete(`/reservations/${id}/`),
+  confirmer: (id) => apiClient.post(`/reservations/${id}/confirmer/`),
+  annuler: (id) => apiClient.post(`/reservations/${id}/annuler/`),
+  terminer: (id) => apiClient.post(`/reservations/${id}/terminer/`),
+  getDisponibilites: (params = {}) =>
+    apiClient.get('/reservations/disponibilites/', { params }),
+}
 export const dashboardApi = {
   getStats: () => apiClient.get('/dashboard/stats/'),
 }
