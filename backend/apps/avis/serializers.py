@@ -27,7 +27,7 @@ class AvisSerializer(serializers.ModelSerializer):
         read_only_fields = ['id_avis']
 
     def get_client_nom(self, obj):
-        return str(obj.client)
+        return f"{obj.client.prenom} {obj.client.nom}"
 
     def validate_note(self, value):
         if not 1 <= value <= 5:

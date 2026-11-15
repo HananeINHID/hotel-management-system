@@ -18,7 +18,7 @@ def make_client(**kw):
 
 class ClientModelTest(TestCase):
     def test_str(self):
-        self.assertEqual(str(make_client()), 'Sara Alaoui')
+        self.assertEqual(str(make_client()), 'Alaoui Sara')
 
     def test_piece_identite_unique(self):
         make_client()

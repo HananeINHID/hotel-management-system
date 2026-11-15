@@ -258,10 +258,11 @@ function ClientsPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label className={LABEL}>Téléphone</label>
+              <label className={LABEL}>Téléphone *</label>
               <input
                 type="text"
                 {...register('telephone', {
+                  required: 'Le téléphone est obligatoire',
                   pattern: { value: /^\+?[0-9 .\-()]{6,20}$|^$/, message: 'Numéro invalide' },
                 })}
                 placeholder="+212 6 12 34 56 78"
