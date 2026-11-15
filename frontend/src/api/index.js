@@ -39,9 +39,35 @@ export const employesApi = {
   changerStatut: (id, statut) => apiClient.post(`/employes/${id}/changer-statut/`, { statut }),
 }
 
+
 export const sejoursApi = {
-  getResumeFinancier: (id) => apiClient.get(`/sejours/${id}/resume-financier/`),
+  getAll: (params = {}) => apiClient.get('/sejours/', { params }),
+
+  get: (id) => apiClient.get(`/sejours/${id}/`),
+
+  // Réservations confirmées et chambres disponibles pour le check-in
+  getArrivees: (params = {}) =>
+    apiClient.get('/sejours/arrivees/', { params }),
+
+  // Création du séjour à partir d'une association réservation-chambre
+  checkIn: (data) => apiClient.post('/sejours/check-in/', data),
+
+  // Enregistrement du départ réel
+  checkOut: (id) =>
+    apiClient.post(`/sejours/${id}/check-out/`),
+
+  // Archivage d'un séjour terminé
+  archive: (id) =>
+    apiClient.post(`/sejours/${id}/archiver/`),
+
+  // Restauration d'un séjour archivé
+  unarchive: (id) =>
+    apiClient.post(`/sejours/${id}/desarchiver/`),
+
+  getResumeFinancier: (id) =>
+    apiClient.get(`/sejours/${id}/resume-financier/`),
 }
+
 
 export const dashboardApi = {
   getStats: () => apiClient.get('/dashboard/stats/'),
