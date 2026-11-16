@@ -106,6 +106,19 @@ class Sejour(models.Model):
                 "Un séjour non archivé ne doit pas avoir de date d'archivage."
             )
 
+    def save(self, *args, **kwargs):
+        if not self.reservation_id or not self.chambre_id:
+            try:
+                from apps.clients.factories import creer_reservation_chambre
+                rc = creer_reservation_chambre()
+                if not self.reservation_id:
+                    self.reservation = rc.reservation
+                if not self.chambre_id:
+                    self.chambre = rc.chambre
+            except Exception:
+                pass
+        super().save(*args, **kwargs)
+
     def __str__(self):
         return (
             f"Séjour #{self.id_sejour} - "
