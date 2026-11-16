@@ -329,29 +329,63 @@ npm run dev
 
 ### Scénario A — Base fraîche (recommandé pour une installation initiale)
 
-1. Créer la base vide (voir 6.4)
+1. Créer la base vide (voir [Section 6.4](#64-créer-la-base-de-données-mysql))
 2. `python manage.py migrate` → applique le schéma complet
-3. `python manage.py import_demo_hotel --apply` → peuple les données
+3. `python manage.py import_demo_hotel --apply` → peuple les 217 enregistrements pédagogiques
 
-Les triggers sont installés automatiquement par la migration `reservations/0002_triggers.py`.
+Les triggers du module réservations sont installés automatiquement par la migration `reservations/0002_triggers.py`.
 
-### Scénario B — Restaurer depuis un dump SQL
+---
 
-Si tu disposes d'un dump `hotel_management.sql` :
+### Scénario B — Restauration rapide et sécurisée pour l'équipe (Recommandé en cas de conflit de migration)
 
+> 💡 **Cas d'usage :** Si un membre de l'équipe rencontre des erreurs de migration (notamment sur `sejours 0003`, `0004` ou `0005` dues à d'anciens séjours sans réservations/clients associés), **ne pas utiliser `--fake`**.  
+> Utilisez plutôt le dump complet vérifié du projet : `database/dumps/hotel_management_complet.sql`.  
+> Il contient le schéma complet, les 351 enregistrements, les 9 triggers, les 2 index optimisés et les 33 migrations Django enregistrées.
+
+#### Option 1 : Script automatisé avec protection contre l'écrasement
+
+Le script vérifie si la base existe et **demande une confirmation explicite** avant toute action. Il permet aussi d'importer dans une nouvelle base (ex: `hotel_management_work`) sans toucher à votre base locale existante.
+
+**Sous Windows (PowerShell) :**
 ```powershell
-mysql -u root -p --port=3307 hotel_management < hotel_management.sql
+.\database\scripts\restaurer_base.ps1
 ```
 
-Puis vérifie l'état des migrations :
+**Sous Linux / macOS (Bash) :**
+```bash
+chmod +x database/scripts/restaurer_base.sh
+./database/scripts/restaurer_base.sh
+```
 
+#### Option 2 : Restauration manuelle pas-à-pas
+
+**Windows (PowerShell) :**
+```powershell
+# 1. Créer la base si inexistante
+mysql -u root -p --port=3307 -e "CREATE DATABASE IF NOT EXISTS hotel_management CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
+
+# 2. Importer le dump via MySQL source (évite les corruptions d'encodage PowerShell UTF-16)
+$dump = (Resolve-Path "database\dumps\hotel_management_complet.sql").Path.Replace('\', '/')
+mysql -u root -p --port=3307 --default-character-set=utf8mb4 -e "USE hotel_management; source $dump;"
+```
+
+**Linux (Bash) :**
+```bash
+mysql -u root -p -e "CREATE DATABASE IF NOT EXISTS hotel_management CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
+mysql -u root -p --default-character-set=utf8mb4 hotel_management < database/dumps/hotel_management_complet.sql
+```
+
+#### 3. Vérification immédiate avec Django :
 ```powershell
 cd backend
 .\venv\Scripts\Activate.ps1
-python manage.py showmigrations
+python manage.py showmigrations    # Toutes les migrations doivent afficher [X]
+python manage.py migrate --plan     # Doit indiquer : No planned migration operations.
+python manage.py check              # Doit afficher : System check identified no issues
 ```
 
-> ⚠️ Ne jamais utiliser `--fake`, `flush` ou `DROP DATABASE` sur une base de travail contenant des données réelles.
+Consulter le guide détaillé : [`database/RESTAURATION.md`](database/RESTAURATION.md).
 
 ### Schéma de référence
 
