@@ -28,8 +28,14 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='sejour',
             name='chambre',
-            field=models.ForeignKey(db_column='id_chambre', default=1, on_delete=django.db.models.deletion.PROTECT, related_name='sejours', to='chambres.chambre'),
-            preserve_default=False,
+            field=models.ForeignKey(
+                blank=True,
+                null=True,
+                db_column='id_chambre',
+                on_delete=django.db.models.deletion.PROTECT,
+                related_name='sejours',
+                to='chambres.chambre',
+            ),
         ),
         migrations.AddField(
             model_name='sejour',
@@ -39,21 +45,27 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='sejour',
             name='observations',
-            field=models.TextField(blank=True),
+            field=models.TextField(blank=True, default=''),
         ),
         migrations.AddField(
             model_name='sejour',
             name='reservation',
-            field=models.ForeignKey(db_column='id_reservation', default=1, on_delete=django.db.models.deletion.PROTECT, related_name='sejours', to='reservations.reservation'),
-            preserve_default=False,
+            field=models.ForeignKey(
+                blank=True,
+                null=True,
+                db_column='id_reservation',
+                on_delete=django.db.models.deletion.PROTECT,
+                related_name='sejours',
+                to='reservations.reservation',
+            ),
         ),
         migrations.AlterField(
             model_name='sejour',
             name='statut_sejour',
-            field=models.CharField(choices=[('EN_COURS', 'En cours'), ('TERMINE', 'Terminé'), ('ANNULE', 'Annulé')], default='EN_COURS', max_length=20),
-        ),
-        migrations.AddConstraint(
-            model_name='sejour',
-            constraint=models.UniqueConstraint(fields=('reservation', 'chambre'), name='unique_sejour_reservation_chambre'),
+            field=models.CharField(
+                choices=[('EN_COURS', 'En cours'), ('TERMINE', 'Terminé'), ('ANNULE', 'Annulé')],
+                default='EN_COURS',
+                max_length=20,
+            ),
         ),
     ]
