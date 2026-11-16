@@ -13,7 +13,7 @@ import {
 } from 'lucide-react'
 
 export const navItems = [
-  { label: 'Tableau de bord', path: '/', icon: LayoutDashboard },
+  { label: 'Tableau de bord', path: '/app', icon: LayoutDashboard },
   { label: 'Clients', path: '/clients', icon: Users },
   { label: 'Avis', path: '/avis', icon: MessageSquare },
   { label: 'Chambres', path: '/chambres', icon: BedDouble },
