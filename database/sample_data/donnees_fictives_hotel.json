@@ -1,0 +1,1957 @@
+{
+  "hotel": "Riad Atlas — Données fictives",
+  "date_generation": "2026-11-16",
+  "tables": {
+    "categorie_chambre": [
+      {
+        "id_categorie": 1,
+        "libelle": "Simple",
+        "capacite": 1,
+        "tarif_nuit": "350.00",
+        "description": "Chambre simple confortable avec Wi-Fi"
+      },
+      {
+        "id_categorie": 2,
+        "libelle": "Double",
+        "capacite": 2,
+        "tarif_nuit": "550.00",
+        "description": "Chambre double avec salle de bain privative"
+      },
+      {
+        "id_categorie": 3,
+        "libelle": "Twin",
+        "capacite": 2,
+        "tarif_nuit": "600.00",
+        "description": "Chambre avec deux lits simples"
+      },
+      {
+        "id_categorie": 4,
+        "libelle": "Suite Junior",
+        "capacite": 3,
+        "tarif_nuit": "950.00",
+        "description": "Suite avec coin salon et vue sur patio"
+      },
+      {
+        "id_categorie": 5,
+        "libelle": "Suite Familiale",
+        "capacite": 5,
+        "tarif_nuit": "1400.00",
+        "description": "Suite spacieuse pour familles"
+      }
+    ],
+    "chambre": [
+      {
+        "id_chambre": 101,
+        "numero_chambre": "101",
+        "etage": 1,
+        "etat_physique": "disponible",
+        "description": "Chambre 101 — Riad Atlas, vue cour intérieure",
+        "id_categorie": 1
+      },
+      {
+        "id_chambre": 102,
+        "numero_chambre": "102",
+        "etage": 1,
+        "etat_physique": "disponible",
+        "description": "Chambre 102 — Riad Atlas",
+        "id_categorie": 2
+      },
+      {
+        "id_chambre": 103,
+        "numero_chambre": "103",
+        "etage": 1,
+        "etat_physique": "disponible",
+        "description": "Chambre 103 — Riad Atlas",
+        "id_categorie": 3
+      },
+      {
+        "id_chambre": 104,
+        "numero_chambre": "104",
+        "etage": 1,
+        "etat_physique": "disponible",
+        "description": "Chambre 104 — Riad Atlas, vue cour intérieure",
+        "id_categorie": 4
+      },
+      {
+        "id_chambre": 105,
+        "numero_chambre": "105",
+        "etage": 1,
+        "etat_physique": "disponible",
+        "description": "Chambre 105 — Riad Atlas",
+        "id_categorie": 5
+      },
+      {
+        "id_chambre": 106,
+        "numero_chambre": "201",
+        "etage": 2,
+        "etat_physique": "disponible",
+        "description": "Chambre 201 — Riad Atlas",
+        "id_categorie": 1
+      },
+      {
+        "id_chambre": 107,
+        "numero_chambre": "202",
+        "etage": 2,
+        "etat_physique": "disponible",
+        "description": "Chambre 202 — Riad Atlas, vue cour intérieure",
+        "id_categorie": 2
+      },
+      {
+        "id_chambre": 108,
+        "numero_chambre": "203",
+        "etage": 2,
+        "etat_physique": "disponible",
+        "description": "Chambre 203 — Riad Atlas",
+        "id_categorie": 3
+      },
+      {
+        "id_chambre": 109,
+        "numero_chambre": "204",
+        "etage": 2,
+        "etat_physique": "disponible",
+        "description": "Chambre 204 — Riad Atlas",
+        "id_categorie": 4
+      },
+      {
+        "id_chambre": 110,
+        "numero_chambre": "205",
+        "etage": 2,
+        "etat_physique": "disponible",
+        "description": "Chambre 205 — Riad Atlas, vue cour intérieure",
+        "id_categorie": 5
+      },
+      {
+        "id_chambre": 111,
+        "numero_chambre": "301",
+        "etage": 3,
+        "etat_physique": "disponible",
+        "description": "Chambre 301 — Riad Atlas",
+        "id_categorie": 1
+      },
+      {
+        "id_chambre": 112,
+        "numero_chambre": "302",
+        "etage": 3,
+        "etat_physique": "disponible",
+        "description": "Chambre 302 — Riad Atlas",
+        "id_categorie": 2
+      },
+      {
+        "id_chambre": 113,
+        "numero_chambre": "303",
+        "etage": 3,
+        "etat_physique": "disponible",
+        "description": "Chambre 303 — Riad Atlas, vue cour intérieure",
+        "id_categorie": 3
+      },
+      {
+        "id_chambre": 114,
+        "numero_chambre": "304",
+        "etage": 3,
+        "etat_physique": "disponible",
+        "description": "Chambre 304 — Riad Atlas",
+        "id_categorie": 4
+      },
+      {
+        "id_chambre": 115,
+        "numero_chambre": "305",
+        "etage": 3,
+        "etat_physique": "disponible",
+        "description": "Chambre 305 — Riad Atlas",
+        "id_categorie": 5
+      },
+      {
+        "id_chambre": 116,
+        "numero_chambre": "401",
+        "etage": 4,
+        "etat_physique": "disponible",
+        "description": "Chambre 401 — Riad Atlas, vue cour intérieure",
+        "id_categorie": 1
+      },
+      {
+        "id_chambre": 117,
+        "numero_chambre": "402",
+        "etage": 4,
+        "etat_physique": "disponible",
+        "description": "Chambre 402 — Riad Atlas",
+        "id_categorie": 2
+      },
+      {
+        "id_chambre": 118,
+        "numero_chambre": "403",
+        "etage": 4,
+        "etat_physique": "disponible",
+        "description": "Chambre 403 — Riad Atlas",
+        "id_categorie": 3
+      },
+      {
+        "id_chambre": 119,
+        "numero_chambre": "404",
+        "etage": 4,
+        "etat_physique": "disponible",
+        "description": "Chambre 404 — Riad Atlas, vue cour intérieure",
+        "id_categorie": 4
+      },
+      {
+        "id_chambre": 120,
+        "numero_chambre": "405",
+        "etage": 4,
+        "etat_physique": "disponible",
+        "description": "Chambre 405 — Riad Atlas",
+        "id_categorie": 5
+      },
+      {
+        "id_chambre": 121,
+        "numero_chambre": "501",
+        "etage": 5,
+        "etat_physique": "disponible",
+        "description": "Chambre 501 — Riad Atlas",
+        "id_categorie": 1
+      },
+      {
+        "id_chambre": 122,
+        "numero_chambre": "502",
+        "etage": 5,
+        "etat_physique": "en_maintenance",
+        "description": "Chambre 502 — Riad Atlas, vue cour intérieure",
+        "id_categorie": 2
+      },
+      {
+        "id_chambre": 123,
+        "numero_chambre": "503",
+        "etage": 5,
+        "etat_physique": "en_maintenance",
+        "description": "Chambre 503 — Riad Atlas",
+        "id_categorie": 3
+      },
+      {
+        "id_chambre": 124,
+        "numero_chambre": "504",
+        "etage": 5,
+        "etat_physique": "en_maintenance",
+        "description": "Chambre 504 — Riad Atlas",
+        "id_categorie": 4
+      },
+      {
+        "id_chambre": 125,
+        "numero_chambre": "505",
+        "etage": 5,
+        "etat_physique": "hors_service",
+        "description": "Chambre 505 — Riad Atlas, vue cour intérieure",
+        "id_categorie": 5
+      }
+    ],
+    "client": [
+      {
+        "id_client": 201,
+        "nom": "El Mansouri",
+        "prenom": "Amine",
+        "piece_identite": "DEMO-CIN-001",
+        "telephone": "0000000001",
+        "email": "client001@example.test",
+        "nationalite": "Marocaine"
+      },
+      {
+        "id_client": 202,
+        "nom": "Ait Lahcen",
+        "prenom": "Salma",
+        "piece_identite": "DEMO-CIN-002",
+        "telephone": "0000000002",
+        "email": "client002@example.test",
+        "nationalite": "Marocaine"
+      },
+      {
+        "id_client": 203,
+        "nom": "Benali",
+        "prenom": "Youssef",
+        "piece_identite": "DEMO-CIN-003",
+        "telephone": "0000000003",
+        "email": "client003@example.test",
+        "nationalite": "Marocaine"
+      },
+      {
+        "id_client": 204,
+        "nom": "Idrissi",
+        "prenom": "Nadia",
+        "piece_identite": "DEMO-CIN-004",
+        "telephone": "0000000004",
+        "email": "client004@example.test",
+        "nationalite": "Marocaine"
+      },
+      {
+        "id_client": 205,
+        "nom": "Berrada",
+        "prenom": "Hamza",
+        "piece_identite": "DEMO-CIN-005",
+        "telephone": "0000000005",
+        "email": "client005@example.test",
+        "nationalite": "Française"
+      },
+      {
+        "id_client": 206,
+        "nom": "El Fassi",
+        "prenom": "Kawtar",
+        "piece_identite": "DEMO-CIN-006",
+        "telephone": "0000000006",
+        "email": "client006@example.test",
+        "nationalite": "Marocaine"
+      },
+      {
+        "id_client": 207,
+        "nom": "Bouzidi",
+        "prenom": "Imane",
+        "piece_identite": "DEMO-CIN-007",
+        "telephone": "0000000007",
+        "email": "client007@example.test",
+        "nationalite": "Marocaine"
+      },
+      {
+        "id_client": 208,
+        "nom": "Amrani",
+        "prenom": "Omar",
+        "piece_identite": "DEMO-CIN-008",
+        "telephone": "0000000008",
+        "email": "client008@example.test",
+        "nationalite": "Marocaine"
+      },
+      {
+        "id_client": 209,
+        "nom": "Tazi",
+        "prenom": "Sara",
+        "piece_identite": "DEMO-CIN-009",
+        "telephone": "0000000009",
+        "email": "client009@example.test",
+        "nationalite": "Marocaine"
+      },
+      {
+        "id_client": 210,
+        "nom": "Haddad",
+        "prenom": "Ayoub",
+        "piece_identite": "DEMO-CIN-010",
+        "telephone": "0000000010",
+        "email": "client010@example.test",
+        "nationalite": "Française"
+      },
+      {
+        "id_client": 211,
+        "nom": "Chraibi",
+        "prenom": "Lina",
+        "piece_identite": "DEMO-CIN-011",
+        "telephone": "0000000011",
+        "email": "client011@example.test",
+        "nationalite": "Marocaine"
+      },
+      {
+        "id_client": 212,
+        "nom": "Ouali",
+        "prenom": "Rachid",
+        "piece_identite": "DEMO-CIN-012",
+        "telephone": "0000000012",
+        "email": "client012@example.test",
+        "nationalite": "Marocaine"
+      },
+      {
+        "id_client": 213,
+        "nom": "Alaoui",
+        "prenom": "Meriem",
+        "piece_identite": "DEMO-CIN-013",
+        "telephone": "0000000013",
+        "email": "client013@example.test",
+        "nationalite": "Marocaine"
+      },
+      {
+        "id_client": 214,
+        "nom": "Lahlou",
+        "prenom": "Adil",
+        "piece_identite": "DEMO-CIN-014",
+        "telephone": "0000000014",
+        "email": "client014@example.test",
+        "nationalite": "Marocaine"
+      },
+      {
+        "id_client": 215,
+        "nom": "Bennani",
+        "prenom": "Noura",
+        "piece_identite": "DEMO-CIN-015",
+        "telephone": "0000000015",
+        "email": "client015@example.test",
+        "nationalite": "Française"
+      },
+      {
+        "id_client": 216,
+        "nom": "Benkirane",
+        "prenom": "Anas",
+        "piece_identite": "DEMO-CIN-016",
+        "telephone": "0000000016",
+        "email": "client016@example.test",
+        "nationalite": "Marocaine"
+      },
+      {
+        "id_client": 217,
+        "nom": "El Khatib",
+        "prenom": "Asmae",
+        "piece_identite": "DEMO-CIN-017",
+        "telephone": "0000000017",
+        "email": "client017@example.test",
+        "nationalite": "Marocaine"
+      },
+      {
+        "id_client": 218,
+        "nom": "Ouazzani",
+        "prenom": "Khalid",
+        "piece_identite": "DEMO-CIN-018",
+        "telephone": "0000000018",
+        "email": "client018@example.test",
+        "nationalite": "Marocaine"
+      },
+      {
+        "id_client": 219,
+        "nom": "Rami",
+        "prenom": "Hajar",
+        "piece_identite": "DEMO-CIN-019",
+        "telephone": "0000000019",
+        "email": "client019@example.test",
+        "nationalite": "Marocaine"
+      },
+      {
+        "id_client": 220,
+        "nom": "Chafai",
+        "prenom": "Zineb",
+        "piece_identite": "DEMO-CIN-020",
+        "telephone": "0000000020",
+        "email": "client020@example.test",
+        "nationalite": "Française"
+      },
+      {
+        "id_client": 221,
+        "nom": "Saidi",
+        "prenom": "Mehdi",
+        "piece_identite": "DEMO-CIN-021",
+        "telephone": "0000000021",
+        "email": "client021@example.test",
+        "nationalite": "Marocaine"
+      },
+      {
+        "id_client": 222,
+        "nom": "Rahmani",
+        "prenom": "Houda",
+        "piece_identite": "DEMO-CIN-022",
+        "telephone": "0000000022",
+        "email": "client022@example.test",
+        "nationalite": "Marocaine"
+      },
+      {
+        "id_client": 223,
+        "nom": "Fahmi",
+        "prenom": "Ismail",
+        "piece_identite": "DEMO-CIN-023",
+        "telephone": "0000000023",
+        "email": "client023@example.test",
+        "nationalite": "Marocaine"
+      },
+      {
+        "id_client": 224,
+        "nom": "Othmani",
+        "prenom": "Yasmina",
+        "piece_identite": "DEMO-CIN-024",
+        "telephone": "0000000024",
+        "email": "client024@example.test",
+        "nationalite": "Marocaine"
+      },
+      {
+        "id_client": 225,
+        "nom": "Boussaid",
+        "prenom": "Bilal",
+        "piece_identite": "DEMO-CIN-025",
+        "telephone": "0000000025",
+        "email": "client025@example.test",
+        "nationalite": "Française"
+      }
+    ],
+    "employe": [
+      {
+        "id_employe": 301,
+        "nom": "El Idrissi",
+        "prenom": "Fatima",
+        "poste": "receptionniste",
+        "telephone": "0000010001",
+        "email": "employe01@example.test",
+        "date_embauche": "2024-02-10",
+        "statut": "actif"
+      },
+      {
+        "id_employe": 302,
+        "nom": "El Amrani",
+        "prenom": "Yassine",
+        "poste": "receptionniste",
+        "telephone": "0000010002",
+        "email": "employe02@example.test",
+        "date_embauche": "2025-03-10",
+        "statut": "actif"
+      },
+      {
+        "id_employe": 303,
+        "nom": "Bennani",
+        "prenom": "Kenza",
+        "poste": "responsable",
+        "telephone": "0000010003",
+        "email": "employe03@example.test",
+        "date_embauche": "2023-04-10",
+        "statut": "actif"
+      },
+      {
+        "id_employe": 304,
+        "nom": "Othmani",
+        "prenom": "Said",
+        "poste": "technicien",
+        "telephone": "0000010004",
+        "email": "employe04@example.test",
+        "date_embauche": "2024-05-10",
+        "statut": "actif"
+      },
+      {
+        "id_employe": 305,
+        "nom": "Tazi",
+        "prenom": "Rania",
+        "poste": "comptable",
+        "telephone": "0000010005",
+        "email": "employe05@example.test",
+        "date_embauche": "2025-06-10",
+        "statut": "actif"
+      },
+      {
+        "id_employe": 306,
+        "nom": "Alaoui",
+        "prenom": "Mourad",
+        "poste": "technicien",
+        "telephone": "0000010006",
+        "email": "employe06@example.test",
+        "date_embauche": "2023-07-10",
+        "statut": "actif"
+      },
+      {
+        "id_employe": 307,
+        "nom": "Ait Omar",
+        "prenom": "Samira",
+        "poste": "receptionniste",
+        "telephone": "0000010007",
+        "email": "employe07@example.test",
+        "date_embauche": "2024-08-10",
+        "statut": "actif"
+      },
+      {
+        "id_employe": 308,
+        "nom": "Lahlou",
+        "prenom": "Zakaria",
+        "poste": "responsable",
+        "telephone": "0000010008",
+        "email": "employe08@example.test",
+        "date_embauche": "2025-09-10",
+        "statut": "actif"
+      }
+    ],
+    "reservation": [
+      {
+        "id_reservation": 1001,
+        "date_reservation": "2026-08-26 09:00:00",
+        "statut_reservation": "terminee",
+        "nb_personnes_total": 1,
+        "montant_estime": "700.00",
+        "id_client": 201,
+        "id_employe": 301
+      },
+      {
+        "id_reservation": 1002,
+        "date_reservation": "2026-08-30 10:00:00",
+        "statut_reservation": "terminee",
+        "nb_personnes_total": 4,
+        "montant_estime": "3450.00",
+        "id_client": 202,
+        "id_employe": 302
+      },
+      {
+        "id_reservation": 1003,
+        "date_reservation": "2026-09-03 11:00:00",
+        "statut_reservation": "terminee",
+        "nb_personnes_total": 2,
+        "montant_estime": "5600.00",
+        "id_client": 203,
+        "id_employe": 303
+      },
+      {
+        "id_reservation": 1004,
+        "date_reservation": "2026-09-07 12:00:00",
+        "statut_reservation": "terminee",
+        "nb_personnes_total": 2,
+        "montant_estime": "1100.00",
+        "id_client": 204,
+        "id_employe": 301
+      },
+      {
+        "id_reservation": 1005,
+        "date_reservation": "2026-09-15 13:00:00",
+        "statut_reservation": "terminee",
+        "nb_personnes_total": 1,
+        "montant_estime": "1050.00",
+        "id_client": 205,
+        "id_employe": 302
+      },
+      {
+        "id_reservation": 1006,
+        "date_reservation": "2026-09-19 14:00:00",
+        "statut_reservation": "terminee",
+        "nb_personnes_total": 4,
+        "montant_estime": "4600.00",
+        "id_client": 206,
+        "id_employe": 303
+      },
+      {
+        "id_reservation": 1007,
+        "date_reservation": "2026-09-23 15:00:00",
+        "statut_reservation": "terminee",
+        "nb_personnes_total": 2,
+        "montant_estime": "2800.00",
+        "id_client": 207,
+        "id_employe": 301
+      },
+      {
+        "id_reservation": 1008,
+        "date_reservation": "2026-09-27 16:00:00",
+        "statut_reservation": "terminee",
+        "nb_personnes_total": 2,
+        "montant_estime": "2850.00",
+        "id_client": 208,
+        "id_employe": 302
+      },
+      {
+        "id_reservation": 1009,
+        "date_reservation": "2026-10-05 09:00:00",
+        "statut_reservation": "terminee",
+        "nb_personnes_total": 1,
+        "montant_estime": "1400.00",
+        "id_client": 209,
+        "id_employe": 303
+      },
+      {
+        "id_reservation": 1010,
+        "date_reservation": "2026-10-09 10:00:00",
+        "statut_reservation": "terminee",
+        "nb_personnes_total": 4,
+        "montant_estime": "2300.00",
+        "id_client": 210,
+        "id_employe": 301
+      },
+      {
+        "id_reservation": 1011,
+        "date_reservation": "2026-10-13 11:00:00",
+        "statut_reservation": "terminee",
+        "nb_personnes_total": 2,
+        "montant_estime": "1650.00",
+        "id_client": 211,
+        "id_employe": 302
+      },
+      {
+        "id_reservation": 1012,
+        "date_reservation": "2026-10-17 12:00:00",
+        "statut_reservation": "terminee",
+        "nb_personnes_total": 2,
+        "montant_estime": "3800.00",
+        "id_client": 212,
+        "id_employe": 303
+      },
+      {
+        "id_reservation": 1013,
+        "date_reservation": "2026-11-14 13:00:00",
+        "statut_reservation": "confirmee",
+        "nb_personnes_total": 4,
+        "montant_estime": "3500.00",
+        "id_client": 213,
+        "id_employe": 301
+      },
+      {
+        "id_reservation": 1014,
+        "date_reservation": "2026-11-15 14:00:00",
+        "statut_reservation": "confirmee",
+        "nb_personnes_total": 2,
+        "montant_estime": "1800.00",
+        "id_client": 214,
+        "id_employe": 302
+      },
+      {
+        "id_reservation": 1015,
+        "date_reservation": "2026-11-15 15:00:00",
+        "statut_reservation": "confirmee",
+        "nb_personnes_total": 2,
+        "montant_estime": "2200.00",
+        "id_client": 215,
+        "id_employe": 303
+      },
+      {
+        "id_reservation": 1016,
+        "date_reservation": "2026-11-15 16:00:00",
+        "statut_reservation": "confirmee",
+        "nb_personnes_total": 3,
+        "montant_estime": "3100.00",
+        "id_client": 216,
+        "id_employe": 301
+      },
+      {
+        "id_reservation": 1017,
+        "date_reservation": "2026-11-15 09:00:00",
+        "statut_reservation": "confirmee",
+        "nb_personnes_total": 1,
+        "montant_estime": "1050.00",
+        "id_client": 217,
+        "id_employe": 302
+      },
+      {
+        "id_reservation": 1018,
+        "date_reservation": "2026-11-15 10:00:00",
+        "statut_reservation": "confirmee",
+        "nb_personnes_total": 2,
+        "montant_estime": "5600.00",
+        "id_client": 218,
+        "id_employe": 303
+      },
+      {
+        "id_reservation": 1019,
+        "date_reservation": "2026-11-15 11:00:00",
+        "statut_reservation": "confirmee",
+        "nb_personnes_total": 2,
+        "montant_estime": "1800.00",
+        "id_client": 219,
+        "id_employe": 301
+      },
+      {
+        "id_reservation": 1020,
+        "date_reservation": "2026-11-15 12:00:00",
+        "statut_reservation": "confirmee",
+        "nb_personnes_total": 2,
+        "montant_estime": "2850.00",
+        "id_client": 220,
+        "id_employe": 302
+      },
+      {
+        "id_reservation": 1021,
+        "date_reservation": "2026-11-15 13:00:00",
+        "statut_reservation": "confirmee",
+        "nb_personnes_total": 2,
+        "montant_estime": "2400.00",
+        "id_client": 221,
+        "id_employe": 303
+      },
+      {
+        "id_reservation": 1022,
+        "date_reservation": "2026-11-15 14:00:00",
+        "statut_reservation": "en_attente",
+        "nb_personnes_total": 3,
+        "montant_estime": "4700.00",
+        "id_client": 222,
+        "id_employe": 301
+      },
+      {
+        "id_reservation": 1023,
+        "date_reservation": "2026-11-15 15:00:00",
+        "statut_reservation": "en_attente",
+        "nb_personnes_total": 2,
+        "montant_estime": "1650.00",
+        "id_client": 223,
+        "id_employe": 302
+      },
+      {
+        "id_reservation": 1024,
+        "date_reservation": "2026-11-15 16:00:00",
+        "statut_reservation": "en_attente",
+        "nb_personnes_total": 1,
+        "montant_estime": "1400.00",
+        "id_client": 224,
+        "id_employe": 303
+      },
+      {
+        "id_reservation": 1025,
+        "date_reservation": "2026-11-15 09:00:00",
+        "statut_reservation": "en_attente",
+        "nb_personnes_total": 2,
+        "montant_estime": "2300.00",
+        "id_client": 225,
+        "id_employe": 301
+      },
+      {
+        "id_reservation": 1026,
+        "date_reservation": "2026-11-15 10:00:00",
+        "statut_reservation": "en_attente",
+        "nb_personnes_total": 2,
+        "montant_estime": "4200.00",
+        "id_client": 201,
+        "id_employe": 302
+      },
+      {
+        "id_reservation": 1027,
+        "date_reservation": "2026-11-15 11:00:00",
+        "statut_reservation": "en_attente",
+        "nb_personnes_total": 2,
+        "montant_estime": "2200.00",
+        "id_client": 202,
+        "id_employe": 303
+      },
+      {
+        "id_reservation": 1028,
+        "date_reservation": "2026-11-12 12:00:00",
+        "statut_reservation": "annulee",
+        "nb_personnes_total": 4,
+        "montant_estime": "5250.00",
+        "id_client": 203,
+        "id_employe": 301
+      },
+      {
+        "id_reservation": 1029,
+        "date_reservation": "2026-11-15 13:00:00",
+        "statut_reservation": "annulee",
+        "nb_personnes_total": 2,
+        "montant_estime": "1800.00",
+        "id_client": 204,
+        "id_employe": 302
+      },
+      {
+        "id_reservation": 1030,
+        "date_reservation": "2026-11-15 14:00:00",
+        "statut_reservation": "annulee",
+        "nb_personnes_total": 2,
+        "montant_estime": "4200.00",
+        "id_client": 205,
+        "id_employe": 303
+      }
+    ],
+    "reservation_chambre": [
+      {
+        "id_reservation": 1001,
+        "id_chambre": 101,
+        "date_arrivee_prevue": "2026-09-01",
+        "date_depart_prevue": "2026-09-03",
+        "nb_occupants": 1,
+        "tarif_nuit_applique": "350.00"
+      },
+      {
+        "id_reservation": 1002,
+        "id_chambre": 108,
+        "date_arrivee_prevue": "2026-09-06",
+        "date_depart_prevue": "2026-09-09",
+        "nb_occupants": 2,
+        "tarif_nuit_applique": "600.00"
+      },
+      {
+        "id_reservation": 1002,
+        "id_chambre": 107,
+        "date_arrivee_prevue": "2026-09-06",
+        "date_depart_prevue": "2026-09-09",
+        "nb_occupants": 2,
+        "tarif_nuit_applique": "550.00"
+      },
+      {
+        "id_reservation": 1003,
+        "id_chambre": 115,
+        "date_arrivee_prevue": "2026-09-11",
+        "date_depart_prevue": "2026-09-15",
+        "nb_occupants": 2,
+        "tarif_nuit_applique": "1400.00"
+      },
+      {
+        "id_reservation": 1004,
+        "id_chambre": 122,
+        "date_arrivee_prevue": "2026-09-16",
+        "date_depart_prevue": "2026-09-18",
+        "nb_occupants": 2,
+        "tarif_nuit_applique": "550.00"
+      },
+      {
+        "id_reservation": 1005,
+        "id_chambre": 106,
+        "date_arrivee_prevue": "2026-09-21",
+        "date_depart_prevue": "2026-09-24",
+        "nb_occupants": 1,
+        "tarif_nuit_applique": "350.00"
+      },
+      {
+        "id_reservation": 1006,
+        "id_chambre": 113,
+        "date_arrivee_prevue": "2026-09-26",
+        "date_depart_prevue": "2026-09-30",
+        "nb_occupants": 2,
+        "tarif_nuit_applique": "600.00"
+      },
+      {
+        "id_reservation": 1006,
+        "id_chambre": 112,
+        "date_arrivee_prevue": "2026-09-26",
+        "date_depart_prevue": "2026-09-30",
+        "nb_occupants": 2,
+        "tarif_nuit_applique": "550.00"
+      },
+      {
+        "id_reservation": 1007,
+        "id_chambre": 120,
+        "date_arrivee_prevue": "2026-10-01",
+        "date_depart_prevue": "2026-10-03",
+        "nb_occupants": 2,
+        "tarif_nuit_applique": "1400.00"
+      },
+      {
+        "id_reservation": 1008,
+        "id_chambre": 104,
+        "date_arrivee_prevue": "2026-10-06",
+        "date_depart_prevue": "2026-10-09",
+        "nb_occupants": 2,
+        "tarif_nuit_applique": "950.00"
+      },
+      {
+        "id_reservation": 1009,
+        "id_chambre": 111,
+        "date_arrivee_prevue": "2026-10-11",
+        "date_depart_prevue": "2026-10-15",
+        "nb_occupants": 1,
+        "tarif_nuit_applique": "350.00"
+      },
+      {
+        "id_reservation": 1010,
+        "id_chambre": 118,
+        "date_arrivee_prevue": "2026-10-16",
+        "date_depart_prevue": "2026-10-18",
+        "nb_occupants": 2,
+        "tarif_nuit_applique": "600.00"
+      },
+      {
+        "id_reservation": 1010,
+        "id_chambre": 117,
+        "date_arrivee_prevue": "2026-10-16",
+        "date_depart_prevue": "2026-10-18",
+        "nb_occupants": 2,
+        "tarif_nuit_applique": "550.00"
+      },
+      {
+        "id_reservation": 1011,
+        "id_chambre": 102,
+        "date_arrivee_prevue": "2026-10-21",
+        "date_depart_prevue": "2026-10-24",
+        "nb_occupants": 2,
+        "tarif_nuit_applique": "550.00"
+      },
+      {
+        "id_reservation": 1012,
+        "id_chambre": 109,
+        "date_arrivee_prevue": "2026-10-26",
+        "date_depart_prevue": "2026-10-30",
+        "nb_occupants": 2,
+        "tarif_nuit_applique": "950.00"
+      },
+      {
+        "id_reservation": 1013,
+        "id_chambre": 116,
+        "date_arrivee_prevue": "2026-11-20",
+        "date_depart_prevue": "2026-11-22",
+        "nb_occupants": 1,
+        "tarif_nuit_applique": "350.00"
+      },
+      {
+        "id_reservation": 1013,
+        "id_chambre": 115,
+        "date_arrivee_prevue": "2026-11-20",
+        "date_depart_prevue": "2026-11-22",
+        "nb_occupants": 3,
+        "tarif_nuit_applique": "1400.00"
+      },
+      {
+        "id_reservation": 1014,
+        "id_chambre": 123,
+        "date_arrivee_prevue": "2026-11-24",
+        "date_depart_prevue": "2026-11-27",
+        "nb_occupants": 2,
+        "tarif_nuit_applique": "600.00"
+      },
+      {
+        "id_reservation": 1015,
+        "id_chambre": 107,
+        "date_arrivee_prevue": "2026-11-28",
+        "date_depart_prevue": "2026-12-02",
+        "nb_occupants": 2,
+        "tarif_nuit_applique": "550.00"
+      },
+      {
+        "id_reservation": 1016,
+        "id_chambre": 114,
+        "date_arrivee_prevue": "2026-12-02",
+        "date_depart_prevue": "2026-12-04",
+        "nb_occupants": 1,
+        "tarif_nuit_applique": "950.00"
+      },
+      {
+        "id_reservation": 1016,
+        "id_chambre": 113,
+        "date_arrivee_prevue": "2026-12-02",
+        "date_depart_prevue": "2026-12-04",
+        "nb_occupants": 2,
+        "tarif_nuit_applique": "600.00"
+      },
+      {
+        "id_reservation": 1017,
+        "id_chambre": 121,
+        "date_arrivee_prevue": "2026-12-06",
+        "date_depart_prevue": "2026-12-09",
+        "nb_occupants": 1,
+        "tarif_nuit_applique": "350.00"
+      },
+      {
+        "id_reservation": 1018,
+        "id_chambre": 105,
+        "date_arrivee_prevue": "2026-12-10",
+        "date_depart_prevue": "2026-12-14",
+        "nb_occupants": 2,
+        "tarif_nuit_applique": "1400.00"
+      },
+      {
+        "id_reservation": 1019,
+        "id_chambre": 112,
+        "date_arrivee_prevue": "2026-12-14",
+        "date_depart_prevue": "2026-12-16",
+        "nb_occupants": 1,
+        "tarif_nuit_applique": "550.00"
+      },
+      {
+        "id_reservation": 1019,
+        "id_chambre": 111,
+        "date_arrivee_prevue": "2026-12-14",
+        "date_depart_prevue": "2026-12-16",
+        "nb_occupants": 1,
+        "tarif_nuit_applique": "350.00"
+      },
+      {
+        "id_reservation": 1020,
+        "id_chambre": 119,
+        "date_arrivee_prevue": "2026-12-18",
+        "date_depart_prevue": "2026-12-21",
+        "nb_occupants": 2,
+        "tarif_nuit_applique": "950.00"
+      },
+      {
+        "id_reservation": 1021,
+        "id_chambre": 103,
+        "date_arrivee_prevue": "2026-12-22",
+        "date_depart_prevue": "2026-12-26",
+        "nb_occupants": 2,
+        "tarif_nuit_applique": "600.00"
+      },
+      {
+        "id_reservation": 1022,
+        "id_chambre": 110,
+        "date_arrivee_prevue": "2026-12-05",
+        "date_depart_prevue": "2026-12-07",
+        "nb_occupants": 2,
+        "tarif_nuit_applique": "1400.00"
+      },
+      {
+        "id_reservation": 1022,
+        "id_chambre": 109,
+        "date_arrivee_prevue": "2026-12-05",
+        "date_depart_prevue": "2026-12-07",
+        "nb_occupants": 1,
+        "tarif_nuit_applique": "950.00"
+      },
+      {
+        "id_reservation": 1023,
+        "id_chambre": 117,
+        "date_arrivee_prevue": "2026-12-10",
+        "date_depart_prevue": "2026-12-13",
+        "nb_occupants": 2,
+        "tarif_nuit_applique": "550.00"
+      },
+      {
+        "id_reservation": 1024,
+        "id_chambre": 101,
+        "date_arrivee_prevue": "2026-12-15",
+        "date_depart_prevue": "2026-12-19",
+        "nb_occupants": 1,
+        "tarif_nuit_applique": "350.00"
+      },
+      {
+        "id_reservation": 1025,
+        "id_chambre": 108,
+        "date_arrivee_prevue": "2026-12-20",
+        "date_depart_prevue": "2026-12-22",
+        "nb_occupants": 1,
+        "tarif_nuit_applique": "600.00"
+      },
+      {
+        "id_reservation": 1025,
+        "id_chambre": 107,
+        "date_arrivee_prevue": "2026-12-20",
+        "date_depart_prevue": "2026-12-22",
+        "nb_occupants": 1,
+        "tarif_nuit_applique": "550.00"
+      },
+      {
+        "id_reservation": 1026,
+        "id_chambre": 115,
+        "date_arrivee_prevue": "2026-12-25",
+        "date_depart_prevue": "2026-12-28",
+        "nb_occupants": 2,
+        "tarif_nuit_applique": "1400.00"
+      },
+      {
+        "id_reservation": 1027,
+        "id_chambre": 122,
+        "date_arrivee_prevue": "2026-12-30",
+        "date_depart_prevue": "2027-01-03",
+        "nb_occupants": 2,
+        "tarif_nuit_applique": "550.00"
+      },
+      {
+        "id_reservation": 1028,
+        "id_chambre": 106,
+        "date_arrivee_prevue": "2026-11-21",
+        "date_depart_prevue": "2026-11-24",
+        "nb_occupants": 1,
+        "tarif_nuit_applique": "350.00"
+      },
+      {
+        "id_reservation": 1028,
+        "id_chambre": 105,
+        "date_arrivee_prevue": "2026-11-21",
+        "date_depart_prevue": "2026-11-24",
+        "nb_occupants": 3,
+        "tarif_nuit_applique": "1400.00"
+      },
+      {
+        "id_reservation": 1029,
+        "id_chambre": 113,
+        "date_arrivee_prevue": "2026-11-24",
+        "date_depart_prevue": "2026-11-27",
+        "nb_occupants": 2,
+        "tarif_nuit_applique": "600.00"
+      },
+      {
+        "id_reservation": 1030,
+        "id_chambre": 120,
+        "date_arrivee_prevue": "2026-11-27",
+        "date_depart_prevue": "2026-11-30",
+        "nb_occupants": 2,
+        "tarif_nuit_applique": "1400.00"
+      }
+    ],
+    "sejour": [
+      {
+        "id_sejour": 2001,
+        "arrivee_reelle": "2026-09-01 14:25:00",
+        "depart_reel": "2026-09-03 11:00:00",
+        "statut_sejour": "termine",
+        "observations": "Arrivée anticipée enregistrée",
+        "est_archive": 0,
+        "date_archivage": null,
+        "id_reservation": 1001,
+        "id_chambre": 101
+      },
+      {
+        "id_sejour": 2002,
+        "arrivee_reelle": "2026-09-06 14:25:00",
+        "depart_reel": "2026-09-09 11:00:00",
+        "statut_sejour": "termine",
+        "observations": "Séjour effectué sans incident",
+        "est_archive": 0,
+        "date_archivage": null,
+        "id_reservation": 1002,
+        "id_chambre": 108
+      },
+      {
+        "id_sejour": 2003,
+        "arrivee_reelle": "2026-09-06 14:25:00",
+        "depart_reel": "2026-09-09 11:00:00",
+        "statut_sejour": "termine",
+        "observations": "Séjour effectué sans incident",
+        "est_archive": 0,
+        "date_archivage": null,
+        "id_reservation": 1002,
+        "id_chambre": 107
+      },
+      {
+        "id_sejour": 2004,
+        "arrivee_reelle": "2026-09-11 14:25:00",
+        "depart_reel": "2026-09-15 11:00:00",
+        "statut_sejour": "termine",
+        "observations": "Arrivée anticipée enregistrée",
+        "est_archive": 1,
+        "date_archivage": "2026-09-25 09:00:00",
+        "id_reservation": 1003,
+        "id_chambre": 115
+      },
+      {
+        "id_sejour": 2005,
+        "arrivee_reelle": "2026-09-16 14:25:00",
+        "depart_reel": "2026-09-18 11:00:00",
+        "statut_sejour": "termine",
+        "observations": "Séjour effectué sans incident",
+        "est_archive": 0,
+        "date_archivage": null,
+        "id_reservation": 1004,
+        "id_chambre": 122
+      },
+      {
+        "id_sejour": 2006,
+        "arrivee_reelle": "2026-09-21 14:25:00",
+        "depart_reel": "2026-09-24 11:00:00",
+        "statut_sejour": "termine",
+        "observations": "Séjour effectué sans incident",
+        "est_archive": 0,
+        "date_archivage": null,
+        "id_reservation": 1005,
+        "id_chambre": 106
+      },
+      {
+        "id_sejour": 2007,
+        "arrivee_reelle": "2026-09-26 14:25:00",
+        "depart_reel": "2026-09-30 11:00:00",
+        "statut_sejour": "termine",
+        "observations": "Arrivée anticipée enregistrée",
+        "est_archive": 0,
+        "date_archivage": null,
+        "id_reservation": 1006,
+        "id_chambre": 113
+      },
+      {
+        "id_sejour": 2008,
+        "arrivee_reelle": "2026-09-26 14:25:00",
+        "depart_reel": "2026-09-30 11:00:00",
+        "statut_sejour": "termine",
+        "observations": "Séjour effectué sans incident",
+        "est_archive": 1,
+        "date_archivage": "2026-10-10 09:00:00",
+        "id_reservation": 1006,
+        "id_chambre": 112
+      },
+      {
+        "id_sejour": 2009,
+        "arrivee_reelle": "2026-10-01 14:25:00",
+        "depart_reel": "2026-10-03 11:00:00",
+        "statut_sejour": "termine",
+        "observations": "Séjour effectué sans incident",
+        "est_archive": 0,
+        "date_archivage": null,
+        "id_reservation": 1007,
+        "id_chambre": 120
+      },
+      {
+        "id_sejour": 2010,
+        "arrivee_reelle": "2026-10-06 14:25:00",
+        "depart_reel": "2026-10-09 11:00:00",
+        "statut_sejour": "termine",
+        "observations": "Arrivée anticipée enregistrée",
+        "est_archive": 0,
+        "date_archivage": null,
+        "id_reservation": 1008,
+        "id_chambre": 104
+      },
+      {
+        "id_sejour": 2011,
+        "arrivee_reelle": "2026-10-11 14:25:00",
+        "depart_reel": "2026-10-15 11:00:00",
+        "statut_sejour": "termine",
+        "observations": "Séjour effectué sans incident",
+        "est_archive": 0,
+        "date_archivage": null,
+        "id_reservation": 1009,
+        "id_chambre": 111
+      },
+      {
+        "id_sejour": 2012,
+        "arrivee_reelle": "2026-10-16 14:25:00",
+        "depart_reel": "2026-10-18 11:00:00",
+        "statut_sejour": "termine",
+        "observations": "Séjour effectué sans incident",
+        "est_archive": 1,
+        "date_archivage": "2026-10-28 09:00:00",
+        "id_reservation": 1010,
+        "id_chambre": 118
+      },
+      {
+        "id_sejour": 2013,
+        "arrivee_reelle": "2026-10-16 14:25:00",
+        "depart_reel": "2026-10-18 11:00:00",
+        "statut_sejour": "termine",
+        "observations": "Arrivée anticipée enregistrée",
+        "est_archive": 0,
+        "date_archivage": null,
+        "id_reservation": 1010,
+        "id_chambre": 117
+      },
+      {
+        "id_sejour": 2014,
+        "arrivee_reelle": "2026-10-21 14:25:00",
+        "depart_reel": "2026-10-24 11:00:00",
+        "statut_sejour": "termine",
+        "observations": "Séjour effectué sans incident",
+        "est_archive": 0,
+        "date_archivage": null,
+        "id_reservation": 1011,
+        "id_chambre": 102
+      },
+      {
+        "id_sejour": 2015,
+        "arrivee_reelle": "2026-10-26 14:25:00",
+        "depart_reel": "2026-10-30 11:00:00",
+        "statut_sejour": "termine",
+        "observations": "Séjour effectué sans incident",
+        "est_archive": 0,
+        "date_archivage": null,
+        "id_reservation": 1012,
+        "id_chambre": 109
+      }
+    ],
+    "service": [
+      {
+        "id_service": 501,
+        "nom": "Petit-déjeuner",
+        "type_service": "restauration",
+        "prix_unitaire": "85.00",
+        "description": "Buffet petit-déjeuner"
+      },
+      {
+        "id_service": 502,
+        "nom": "Transfert aéroport",
+        "type_service": "transport",
+        "prix_unitaire": "220.00",
+        "description": "Transfert aller simple"
+      },
+      {
+        "id_service": 503,
+        "nom": "Blanchisserie",
+        "type_service": "linge",
+        "prix_unitaire": "65.00",
+        "description": "Nettoyage de vêtements"
+      },
+      {
+        "id_service": 504,
+        "nom": "Spa traditionnel",
+        "type_service": "bien_etre",
+        "prix_unitaire": "320.00",
+        "description": "Hammam et soin"
+      },
+      {
+        "id_service": 505,
+        "nom": "Dîner marocain",
+        "type_service": "restauration",
+        "prix_unitaire": "180.00",
+        "description": "Menu marocain"
+      },
+      {
+        "id_service": 506,
+        "nom": "Parking",
+        "type_service": "stationnement",
+        "prix_unitaire": "40.00",
+        "description": "Parking par nuit"
+      },
+      {
+        "id_service": 507,
+        "nom": "Excursion guidée",
+        "type_service": "activite",
+        "prix_unitaire": "450.00",
+        "description": "Visite culturelle guidée"
+      },
+      {
+        "id_service": 508,
+        "nom": "Service en chambre",
+        "type_service": "restauration",
+        "prix_unitaire": "95.00",
+        "description": "Collation en chambre"
+      }
+    ],
+    "consommation_service": [
+      {
+        "id_consommation": 3001,
+        "date_consommation": "2026-09-01 16:00:00",
+        "quantite": 1,
+        "prix_applique": "85.00",
+        "id_sejour": 2001,
+        "id_service": 501
+      },
+      {
+        "id_consommation": 3002,
+        "date_consommation": "2026-09-06 16:00:00",
+        "quantite": 2,
+        "prix_applique": "320.00",
+        "id_sejour": 2002,
+        "id_service": 504
+      },
+      {
+        "id_consommation": 3003,
+        "date_consommation": "2026-09-06 16:00:00",
+        "quantite": 1,
+        "prix_applique": "450.00",
+        "id_sejour": 2003,
+        "id_service": 507
+      },
+      {
+        "id_consommation": 3004,
+        "date_consommation": "2026-09-11 16:00:00",
+        "quantite": 2,
+        "prix_applique": "220.00",
+        "id_sejour": 2004,
+        "id_service": 502
+      },
+      {
+        "id_consommation": 3005,
+        "date_consommation": "2026-09-16 16:00:00",
+        "quantite": 1,
+        "prix_applique": "180.00",
+        "id_sejour": 2005,
+        "id_service": 505
+      },
+      {
+        "id_consommation": 3006,
+        "date_consommation": "2026-09-21 16:00:00",
+        "quantite": 2,
+        "prix_applique": "95.00",
+        "id_sejour": 2006,
+        "id_service": 508
+      },
+      {
+        "id_consommation": 3007,
+        "date_consommation": "2026-09-26 16:00:00",
+        "quantite": 1,
+        "prix_applique": "65.00",
+        "id_sejour": 2007,
+        "id_service": 503
+      },
+      {
+        "id_consommation": 3008,
+        "date_consommation": "2026-09-26 16:00:00",
+        "quantite": 2,
+        "prix_applique": "40.00",
+        "id_sejour": 2008,
+        "id_service": 506
+      },
+      {
+        "id_consommation": 3009,
+        "date_consommation": "2026-10-01 16:00:00",
+        "quantite": 1,
+        "prix_applique": "85.00",
+        "id_sejour": 2009,
+        "id_service": 501
+      },
+      {
+        "id_consommation": 3010,
+        "date_consommation": "2026-10-06 16:00:00",
+        "quantite": 2,
+        "prix_applique": "320.00",
+        "id_sejour": 2010,
+        "id_service": 504
+      },
+      {
+        "id_consommation": 3011,
+        "date_consommation": "2026-10-11 16:00:00",
+        "quantite": 1,
+        "prix_applique": "450.00",
+        "id_sejour": 2011,
+        "id_service": 507
+      },
+      {
+        "id_consommation": 3012,
+        "date_consommation": "2026-10-16 16:00:00",
+        "quantite": 2,
+        "prix_applique": "220.00",
+        "id_sejour": 2012,
+        "id_service": 502
+      },
+      {
+        "id_consommation": 3013,
+        "date_consommation": "2026-10-16 16:00:00",
+        "quantite": 1,
+        "prix_applique": "180.00",
+        "id_sejour": 2013,
+        "id_service": 505
+      },
+      {
+        "id_consommation": 3014,
+        "date_consommation": "2026-10-21 16:00:00",
+        "quantite": 2,
+        "prix_applique": "95.00",
+        "id_sejour": 2014,
+        "id_service": 508
+      },
+      {
+        "id_consommation": 3015,
+        "date_consommation": "2026-10-26 16:00:00",
+        "quantite": 1,
+        "prix_applique": "65.00",
+        "id_sejour": 2015,
+        "id_service": 503
+      },
+      {
+        "id_consommation": 3016,
+        "date_consommation": "2026-09-02 16:00:00",
+        "quantite": 2,
+        "prix_applique": "40.00",
+        "id_sejour": 2001,
+        "id_service": 506
+      },
+      {
+        "id_consommation": 3017,
+        "date_consommation": "2026-09-07 16:00:00",
+        "quantite": 1,
+        "prix_applique": "85.00",
+        "id_sejour": 2002,
+        "id_service": 501
+      },
+      {
+        "id_consommation": 3018,
+        "date_consommation": "2026-09-07 16:00:00",
+        "quantite": 2,
+        "prix_applique": "320.00",
+        "id_sejour": 2003,
+        "id_service": 504
+      },
+      {
+        "id_consommation": 3019,
+        "date_consommation": "2026-09-12 16:00:00",
+        "quantite": 1,
+        "prix_applique": "450.00",
+        "id_sejour": 2004,
+        "id_service": 507
+      },
+      {
+        "id_consommation": 3020,
+        "date_consommation": "2026-09-17 16:00:00",
+        "quantite": 2,
+        "prix_applique": "220.00",
+        "id_sejour": 2005,
+        "id_service": 502
+      }
+    ],
+    "paiement": [
+      {
+        "id_paiement": 4001,
+        "date_paiement": "2026-09-01 17:00:00",
+        "montant": "346.00",
+        "mode_paiement": "carte",
+        "statut": "valide",
+        "reference_paiement": "DEMO-PAY-04001",
+        "id_sejour": 2001,
+        "id_employe": 301
+      },
+      {
+        "id_paiement": 4002,
+        "date_paiement": "2026-09-03 10:00:00",
+        "montant": "519.00",
+        "mode_paiement": "carte",
+        "statut": "valide",
+        "reference_paiement": "DEMO-PAY-04002",
+        "id_sejour": 2001,
+        "id_employe": 301
+      },
+      {
+        "id_paiement": 4003,
+        "date_paiement": "2026-09-06 17:00:00",
+        "montant": "1010.00",
+        "mode_paiement": "especes",
+        "statut": "valide",
+        "reference_paiement": "DEMO-PAY-04003",
+        "id_sejour": 2002,
+        "id_employe": 305
+      },
+      {
+        "id_paiement": 4004,
+        "date_paiement": "2026-09-09 10:00:00",
+        "montant": "1515.00",
+        "mode_paiement": "especes",
+        "statut": "valide",
+        "reference_paiement": "DEMO-PAY-04004",
+        "id_sejour": 2002,
+        "id_employe": 305
+      },
+      {
+        "id_paiement": 4005,
+        "date_paiement": "2026-09-06 17:00:00",
+        "montant": "1096.00",
+        "mode_paiement": "virement",
+        "statut": "valide",
+        "reference_paiement": "DEMO-PAY-04005",
+        "id_sejour": 2003,
+        "id_employe": 301
+      },
+      {
+        "id_paiement": 4006,
+        "date_paiement": "2026-09-09 10:00:00",
+        "montant": "1644.00",
+        "mode_paiement": "virement",
+        "statut": "valide",
+        "reference_paiement": "DEMO-PAY-04006",
+        "id_sejour": 2003,
+        "id_employe": 301
+      },
+      {
+        "id_paiement": 4007,
+        "date_paiement": "2026-09-11 17:00:00",
+        "montant": "2596.00",
+        "mode_paiement": "carte",
+        "statut": "valide",
+        "reference_paiement": "DEMO-PAY-04007",
+        "id_sejour": 2004,
+        "id_employe": 305
+      },
+      {
+        "id_paiement": 4008,
+        "date_paiement": "2026-09-15 10:00:00",
+        "montant": "3894.00",
+        "mode_paiement": "carte",
+        "statut": "valide",
+        "reference_paiement": "DEMO-PAY-04008",
+        "id_sejour": 2004,
+        "id_employe": 305
+      },
+      {
+        "id_paiement": 4009,
+        "date_paiement": "2026-09-16 17:00:00",
+        "montant": "688.00",
+        "mode_paiement": "especes",
+        "statut": "valide",
+        "reference_paiement": "DEMO-PAY-04009",
+        "id_sejour": 2005,
+        "id_employe": 301
+      },
+      {
+        "id_paiement": 4010,
+        "date_paiement": "2026-09-18 10:00:00",
+        "montant": "1032.00",
+        "mode_paiement": "especes",
+        "statut": "valide",
+        "reference_paiement": "DEMO-PAY-04010",
+        "id_sejour": 2005,
+        "id_employe": 301
+      },
+      {
+        "id_paiement": 4011,
+        "date_paiement": "2026-09-21 17:00:00",
+        "montant": "1240.00",
+        "mode_paiement": "virement",
+        "statut": "valide",
+        "reference_paiement": "DEMO-PAY-04011",
+        "id_sejour": 2006,
+        "id_employe": 305
+      },
+      {
+        "id_paiement": 4012,
+        "date_paiement": "2026-09-26 17:00:00",
+        "montant": "2465.00",
+        "mode_paiement": "carte",
+        "statut": "valide",
+        "reference_paiement": "DEMO-PAY-04012",
+        "id_sejour": 2007,
+        "id_employe": 301
+      },
+      {
+        "id_paiement": 4013,
+        "date_paiement": "2026-09-26 17:00:00",
+        "montant": "2280.00",
+        "mode_paiement": "especes",
+        "statut": "valide",
+        "reference_paiement": "DEMO-PAY-04013",
+        "id_sejour": 2008,
+        "id_employe": 305
+      },
+      {
+        "id_paiement": 4014,
+        "date_paiement": "2026-10-01 17:00:00",
+        "montant": "2885.00",
+        "mode_paiement": "virement",
+        "statut": "valide",
+        "reference_paiement": "DEMO-PAY-04014",
+        "id_sejour": 2009,
+        "id_employe": 301
+      },
+      {
+        "id_paiement": 4015,
+        "date_paiement": "2026-10-06 17:00:00",
+        "montant": "3490.00",
+        "mode_paiement": "carte",
+        "statut": "valide",
+        "reference_paiement": "DEMO-PAY-04015",
+        "id_sejour": 2010,
+        "id_employe": 305
+      },
+      {
+        "id_paiement": 4016,
+        "date_paiement": "2026-10-11 17:00:00",
+        "montant": "1850.00",
+        "mode_paiement": "especes",
+        "statut": "valide",
+        "reference_paiement": "DEMO-PAY-04016",
+        "id_sejour": 2011,
+        "id_employe": 301
+      },
+      {
+        "id_paiement": 4017,
+        "date_paiement": "2026-10-16 17:00:00",
+        "montant": "1640.00",
+        "mode_paiement": "virement",
+        "statut": "valide",
+        "reference_paiement": "DEMO-PAY-04017",
+        "id_sejour": 2012,
+        "id_employe": 305
+      },
+      {
+        "id_paiement": 4018,
+        "date_paiement": "2026-10-16 17:00:00",
+        "montant": "768.00",
+        "mode_paiement": "carte",
+        "statut": "valide",
+        "reference_paiement": "DEMO-PAY-04018",
+        "id_sejour": 2013,
+        "id_employe": 301
+      },
+      {
+        "id_paiement": 4019,
+        "date_paiement": "2026-10-21 17:00:00",
+        "montant": "1104.00",
+        "mode_paiement": "especes",
+        "statut": "valide",
+        "reference_paiement": "DEMO-PAY-04019",
+        "id_sejour": 2014,
+        "id_employe": 305
+      },
+      {
+        "id_paiement": 4020,
+        "date_paiement": "2026-10-26 17:00:00",
+        "montant": "2319.00",
+        "mode_paiement": "virement",
+        "statut": "valide",
+        "reference_paiement": "DEMO-PAY-04020",
+        "id_sejour": 2015,
+        "id_employe": 301
+      }
+    ],
+    "maintenance": [
+      {
+        "id_maintenance": 5001,
+        "debut": "2026-08-10 08:00:00",
+        "fin": "2026-08-11 17:00:00",
+        "type": "preventive",
+        "description": "Contrôle de la climatisation",
+        "cout": "90.00",
+        "statut": "terminee",
+        "bloquante": 1,
+        "id_chambre": 122,
+        "id_employe": 304
+      },
+      {
+        "id_maintenance": 5002,
+        "debut": "2026-09-06 08:00:00",
+        "fin": "2026-09-07 17:00:00",
+        "type": "corrective",
+        "description": "Révision des installations électriques",
+        "cout": "145.00",
+        "statut": "terminee",
+        "bloquante": 1,
+        "id_chambre": 123,
+        "id_employe": 306
+      },
+      {
+        "id_maintenance": 5003,
+        "debut": "2026-10-05 08:00:00",
+        "fin": "2026-10-06 17:00:00",
+        "type": "preventive",
+        "description": "Remplacement de serrure",
+        "cout": "200.00",
+        "statut": "terminee",
+        "bloquante": 1,
+        "id_chambre": 124,
+        "id_employe": 304
+      },
+      {
+        "id_maintenance": 5004,
+        "debut": "2026-11-14 08:00:00",
+        "fin": "2026-11-19 17:00:00",
+        "type": "corrective",
+        "description": "Réparation fuite plomberie",
+        "cout": "255.00",
+        "statut": "en_cours",
+        "bloquante": 1,
+        "id_chambre": 122,
+        "id_employe": 306
+      },
+      {
+        "id_maintenance": 5005,
+        "debut": "2026-11-15 08:00:00",
+        "fin": "2026-11-18 17:00:00",
+        "type": "preventive",
+        "description": "Vérification du chauffe-eau",
+        "cout": "310.00",
+        "statut": "en_cours",
+        "bloquante": 1,
+        "id_chambre": 123,
+        "id_employe": 304
+      },
+      {
+        "id_maintenance": 5006,
+        "debut": "2026-11-12 08:00:00",
+        "fin": "2026-11-21 17:00:00",
+        "type": "corrective",
+        "description": "Entretien du système de ventilation",
+        "cout": "365.00",
+        "statut": "en_cours",
+        "bloquante": 1,
+        "id_chambre": 124,
+        "id_employe": 306
+      },
+      {
+        "id_maintenance": 5007,
+        "debut": "2026-12-02 08:00:00",
+        "fin": "2026-12-04 17:00:00",
+        "type": "preventive",
+        "description": "Contrôle des détecteurs de fumée",
+        "cout": "420.00",
+        "statut": "planifiee",
+        "bloquante": 1,
+        "id_chambre": 125,
+        "id_employe": 304
+      },
+      {
+        "id_maintenance": 5008,
+        "debut": "2026-12-09 08:00:00",
+        "fin": "2026-12-11 17:00:00",
+        "type": "corrective",
+        "description": "Réparation de la robinetterie",
+        "cout": "475.00",
+        "statut": "planifiee",
+        "bloquante": 1,
+        "id_chambre": 125,
+        "id_employe": 306
+      },
+      {
+        "id_maintenance": 5009,
+        "debut": "2027-01-06 08:00:00",
+        "fin": "2027-01-08 17:00:00",
+        "type": "preventive",
+        "description": "Révision des équipements",
+        "cout": "530.00",
+        "statut": "planifiee",
+        "bloquante": 1,
+        "id_chambre": 122,
+        "id_employe": 304
+      },
+      {
+        "id_maintenance": 5010,
+        "debut": "2026-12-16 08:00:00",
+        "fin": "2026-12-17 17:00:00",
+        "type": "corrective",
+        "description": "Peinture et entretien léger",
+        "cout": "585.00",
+        "statut": "planifiee",
+        "bloquante": 0,
+        "id_chambre": 123,
+        "id_employe": 306
+      },
+      {
+        "id_maintenance": 5011,
+        "debut": "2026-11-08 08:00:00",
+        "fin": "2026-11-09 17:00:00",
+        "type": "preventive",
+        "description": "Diagnostic éclairage",
+        "cout": "640.00",
+        "statut": "annulee",
+        "bloquante": 0,
+        "id_chambre": 124,
+        "id_employe": 304
+      },
+      {
+        "id_maintenance": 5012,
+        "debut": "2026-07-22 08:00:00",
+        "fin": "2026-07-23 17:00:00",
+        "type": "corrective",
+        "description": "Inspection préventive",
+        "cout": "695.00",
+        "statut": "terminee",
+        "bloquante": 0,
+        "id_chambre": 125,
+        "id_employe": 306
+      }
+    ],
+    "avis": [
+      {
+        "id_avis": 6001,
+        "date_avis": "2026-09-05 13:00:00",
+        "note": 5,
+        "commentaire": "Très bon accueil et chambre calme.",
+        "id_client": 201,
+        "id_sejour": 2001
+      },
+      {
+        "id_avis": 6002,
+        "date_avis": "2026-09-11 13:00:00",
+        "note": 4,
+        "commentaire": "Séjour agréable, personnel attentif.",
+        "id_client": 202,
+        "id_sejour": 2002
+      },
+      {
+        "id_avis": 6003,
+        "date_avis": "2026-09-11 13:00:00",
+        "note": 5,
+        "commentaire": "Petit-déjeuner varié et service rapide.",
+        "id_client": 202,
+        "id_sejour": 2003
+      },
+      {
+        "id_avis": 6004,
+        "date_avis": "2026-09-17 13:00:00",
+        "note": 5,
+        "commentaire": "Chambre propre et établissement bien situé.",
+        "id_client": 203,
+        "id_sejour": 2004
+      },
+      {
+        "id_avis": 6005,
+        "date_avis": "2026-09-20 13:00:00",
+        "note": 4,
+        "commentaire": "Bonne expérience avec un excellent rapport qualité-prix.",
+        "id_client": 204,
+        "id_sejour": 2005
+      },
+      {
+        "id_avis": 6006,
+        "date_avis": "2026-09-26 13:00:00",
+        "note": 5,
+        "commentaire": "Nous avons apprécié le cadre et le confort.",
+        "id_client": 205,
+        "id_sejour": 2006
+      },
+      {
+        "id_avis": 6007,
+        "date_avis": "2026-10-02 13:00:00",
+        "note": 4,
+        "commentaire": "Équipe professionnelle et sympathique.",
+        "id_client": 206,
+        "id_sejour": 2007
+      },
+      {
+        "id_avis": 6008,
+        "date_avis": "2026-10-02 13:00:00",
+        "note": 5,
+        "commentaire": "Service efficace, nous reviendrons.",
+        "id_client": 206,
+        "id_sejour": 2008
+      },
+      {
+        "id_avis": 6009,
+        "date_avis": "2026-10-05 13:00:00",
+        "note": 5,
+        "commentaire": "Belle décoration et séjour reposant.",
+        "id_client": 207,
+        "id_sejour": 2009
+      },
+      {
+        "id_avis": 6010,
+        "date_avis": "2026-10-11 13:00:00",
+        "note": 4,
+        "commentaire": "Accueil chaleureux et prestations satisfaisantes.",
+        "id_client": 208,
+        "id_sejour": 2010
+      }
+    ]
+  }
+}
