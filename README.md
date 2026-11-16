@@ -55,13 +55,13 @@ La base de données MySQL contient **9 triggers** répartis sur les modules Rés
 
 ## 2. Membres de l'équipe et modules
 
-| Membre | Module(s) | Pages React |
-|--------|-----------|-------------|
-| **Karima** | Services, Consommations, Paiements, Employés, Dashboard | `ServicesPage`, `ConsommationsPage`, `PaiementsPage`, `EmployesPage`, `ResumeFinancierPage`, `Dashboard` |
-| **Hamza** | Séjours + Archivage (check-in/check-out) | `SejoursPage` |
-| **Safae** | Clients, Avis | `ClientsPage`, `AvisPage` |
-| **Salma** | Réservations (multichambre), 7 triggers MySQL | `ReservationsPage` |
-| **Hanane** | Chambres, Catégories, Maintenances | `ChambresPage`, `MaintenancesPage` |
+| Membre | Module(s) | Pages React | Fiche individuelle |
+|--------|-----------|-------------|--------------------|
+| **Karima** | Services, Consommations, Paiements, Employés, Dashboard | `ServicesPage`, `ConsommationsPage`, `PaiementsPage`, `EmployesPage`, `ResumeFinancierPage`, `Dashboard` | [`README_KARIMA.md`](docs/contributions/README_KARIMA.md) |
+| **Hamza** | Séjours + Archivage (check-in/check-out) | `SejoursPage` | [`README_HAMZA.md`](docs/contributions/README_HAMZA.md) |
+| **Safae** | Clients, Avis | `ClientsPage`, `AvisPage` | [`README_SAFAE.md`](docs/contributions/README_SAFAE.md) |
+| **Salma** | Réservations (multichambre), 7 triggers MySQL | `ReservationsPage` | [`README_SALMA.md`](docs/contributions/README_SALMA.md) |
+| **Hanane** | Chambres, Catégories, Maintenances | `ChambresPage`, `MaintenancesPage` | Intégrée au README principal |
 
 ---
 
@@ -119,23 +119,27 @@ hotel-management-system/
 │   │   └── utils/                  # Formateurs et helpers
 │   └── package.json
 ├── database/
+│   ├── dumps/                      # Dump complet portable (hotel_management_complet.sql)
 │   ├── mcd/                        # Modèle Conceptuel de Données (fichiers à ajouter)
 │   ├── mld/                        # Modèle Logique de Données (fichiers à ajouter)
 │   ├── sample_data/
 │   │   └── donnees_fictives_hotel.json   # 217 enregistrements Riad Atlas
-│   ├── scripts/
-│   │   ├── create_database.sql
-│   │   ├── triggers_reservations.sql     # 7 triggers (Salma)
-│   │   ├── 03_trigger_avis.sql           # 2 triggers (Safae)
-│   │   ├── 04_requetes_client_avis.sql   # Requêtes variées
-│   │   ├── 05_index_client_avis.sql      # 2 index + EXPLAIN avant/après
-│   │   └── 06_acces_python_client_avis.py # Accès MySQL via Python
-│   └── README_SALMA.md
-├── README.md                       # Ce fichier
-├── README_KARIMA.md
-├── README_HAMZA.md
-├── README_SAFAE.md
-├── README_SALMA.md                 # (vide — contenu dans database/README_SALMA.md)
+│   └── scripts/
+│       ├── create_database.sql
+│       ├── triggers_reservations.sql     # 7 triggers (Salma)
+│       ├── 03_trigger_avis.sql           # 2 triggers (Safae)
+│       ├── 04_requetes_client_avis.sql   # Requêtes variées
+│       ├── 05_index_client_avis.sql      # 2 index + EXPLAIN avant/après
+│       ├── 06_acces_python_client_avis.py # Accès MySQL via Python
+│       ├── restaurer_base.ps1            # Restauration automatisée Windows
+│       └── restaurer_base.sh             # Restauration automatisée Linux
+├── docs/
+│   └── contributions/              # Fiches détaillées individuelles des membres
+│       ├── README_HAMZA.md
+│       ├── README_KARIMA.md
+│       ├── README_SAFAE.md
+│       └── README_SALMA.md
+├── README.md                       # Documentation centrale unique
 └── .gitignore
 ```
 
@@ -903,10 +907,11 @@ L'application `stubs` reste dans `INSTALLED_APPS` pour des raisons de compatibil
 
 | Fichier | Contenu |
 |---------|---------|
-| [`README_KARIMA.md`](README_KARIMA.md) | Modules Services, Paiements, Employés — API et tests détaillés |
-| [`README_HAMZA.md`](README_HAMZA.md) | Module Séjours — check-in/check-out, archivage |
-| [`README_SAFAE.md`](README_SAFAE.md) | Modules Clients et Avis — 22 tests, factories |
-| [`database/README_SALMA.md`](database/README_SALMA.md) | Module Réservations — triggers, API multichambre |
+| [`database/RESTAURATION.md`](database/RESTAURATION.md) | Guide pas-à-pas de restauration sécurisée de la base |
+| [`docs/contributions/README_KARIMA.md`](docs/contributions/README_KARIMA.md) | Modules Services, Paiements, Employés — API et tests détaillés |
+| [`docs/contributions/README_HAMZA.md`](docs/contributions/README_HAMZA.md) | Module Séjours — check-in/check-out, archivage |
+| [`docs/contributions/README_SAFAE.md`](docs/contributions/README_SAFAE.md) | Modules Clients et Avis — 22 tests, factories |
+| [`docs/contributions/README_SALMA.md`](docs/contributions/README_SALMA.md) | Module Réservations — triggers, API multichambre |
 
 ---
 
